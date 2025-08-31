@@ -1,7 +1,6 @@
-// server.js para ApolloServer
 const app = require('./app');
-
-const PORT = process.env.PORT || 4000;
+const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
-  console.log(`🚀 GraphQL server running at http://localhost:${PORT}/graphql`);
+  console.log(`REST e GraphQL rodando em http://localhost:${PORT}`);
+  console.log(`GraphQL em http://localhost:${PORT}/graphql`);
 });
