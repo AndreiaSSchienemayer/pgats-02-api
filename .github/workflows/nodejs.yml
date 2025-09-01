@@ -25,12 +25,11 @@ jobs:
     - name: Rodar os testes de API via Controller
       run: npm run test-controller
 
-
-    - name: Subir a API
-      run: node server.js &
+    - name: Subir a API 
+      run: npm start &
 
     - name: Esperar a API estar Funcionando
-      run: npx wait-on http://localhost:3000
+      run: sleep 5
 
     - name: Rodar os testes de API via HTTP
       run: npm run test-external
